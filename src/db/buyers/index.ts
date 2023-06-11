@@ -8,9 +8,10 @@ const buyers_schema = new Schema<BUYERS_SCHEMA>({
     maxlength: 256,
     required: true,
   },
-  contact: {
+  email: {
     type: SchemaTypes.String,
-    maxlength: 13,
+    maxlength: 256,
+    required: true,
   },
 }, {
   timestamps: true,
